@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "532660530838",
+    "firebase_url": "https://hiot-d7e03-default-rtdb.firebaseio.com",
+    "project_id": "hiot-d7e03",
+    "storage_bucket": "hiot-d7e03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532660530838:android:a294a7cd583f3b3e8f9cb7",
+        "android_client_info": {
+          "package_name": "com.HIOT.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532660530838-0mbc8mf3r4jg3kj94lkbg16kcsuk323c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWMNHz7uX_T1mSGWaFJv4tm1yAn6XO-QQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532660530838-0mbc8mf3r4jg3kj94lkbg16kcsuk323c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
