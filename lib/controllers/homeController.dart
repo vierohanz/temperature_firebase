@@ -6,7 +6,6 @@ import 'package:iot_firebase/models/homeModel.dart';
 
 class homeController extends GetxController {
   final homeM = homeModel();
-
   final DatabaseReference databaseRef = FirebaseDatabase.instance.ref();
 
   @override
@@ -30,9 +29,8 @@ class homeController extends GetxController {
   }
 
   void updateLedValueInFirebase() {
-    // Mengubah nilai 'led' di Firebase
-    databaseRef.child('esiot-db').update({
-      'led': homeM.valueLed.value ? '1' : '0' // 1 untuk true, 0 untuk false
-    });
+    databaseRef
+        .child('esiot-db')
+        .update({'led': homeM.valueLed.value ? '1' : '0'});
   }
 }
