@@ -135,7 +135,7 @@ class home extends StatelessWidget {
                     children: [
                       // Blurred image container
                       Container(
-                        margin: EdgeInsets.only(top: 327),
+                        margin: EdgeInsets.only(top: hp * 0.37),
                         child: ClipRRect(
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(50),
@@ -159,12 +159,11 @@ class home extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        top: 450,
+                        top: hp * 0.52,
                         width: wp * 1,
                         child: Center(
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              elevation: 2,
                               fixedSize: Size(wp * 0.8, 70),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(8),
