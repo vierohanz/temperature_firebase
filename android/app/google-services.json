@@ -30,6 +30,49 @@
             {
               "client_id": "532660530838-0mbc8mf3r4jg3kj94lkbg16kcsuk323c.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "532660530838-0dgj6707geoloso4lsgvveuak280ttda.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.iotFirebase"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532660530838:android:72a13b4fa4a160a18f9cb7",
+        "android_client_info": {
+          "package_name": "com.example.iot_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532660530838-0mbc8mf3r4jg3kj94lkbg16kcsuk323c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWMNHz7uX_T1mSGWaFJv4tm1yAn6XO-QQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532660530838-0mbc8mf3r4jg3kj94lkbg16kcsuk323c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "532660530838-0dgj6707geoloso4lsgvveuak280ttda.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.iotFirebase"
+              }
             }
           ]
         }

@@ -53,7 +53,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCWMNHz7uX_T1mSGWaFJv4tm1yAn6XO-QQ',
-    appId: '1:532660530838:android:a294a7cd583f3b3e8f9cb7',
+    appId: '1:532660530838:android:72a13b4fa4a160a18f9cb7',
     messagingSenderId: '532660530838',
     projectId: 'hiot-d7e03',
     databaseURL: 'https://hiot-d7e03-default-rtdb.firebaseio.com',
@@ -92,4 +92,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'hiot-d7e03.appspot.com',
     measurementId: 'G-HXBPR12QHN',
   );
+
 }

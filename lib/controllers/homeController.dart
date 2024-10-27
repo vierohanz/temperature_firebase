@@ -4,15 +4,29 @@ import 'package:iot_firebase/models/homeModel.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:iot_firebase/models/homeModel.dart';
 
-class homecontroller extends GetxController {
+class homeController extends GetxController {
   final homeM = homeModel();
 
-  final DatabaseReference databaseRef =
-      FirebaseDatabase.instance.ref(); // Tambahkan referensi database
+  final DatabaseReference databaseRef = FirebaseDatabase.instance.ref();
+
+  @override
+  void onInit() {
+    super.onInit();
+    _getDataFromDatabase();
+  }
+
+  void _getDataFromDatabase() {
+    databaseRef.child('esiot-db').onValue.listen((event) {
+      final data = event.snapshot.value as Map<dynamic, dynamic>;
+      homeM.kelembapan.value = data['kelembapan'].toString();
+      homeM.led.value = data['led'].toString();
+      homeM.suhu.value = data['suhu'].toInt().toString();
+    });
+  }
 
   void ledControl() {
-    homeM.valueLed.value = !homeM.valueLed.value; // Mengubah nilai lokal
-    updateLedValueInFirebase(); // Memperbarui nilai di Firebase
+    homeM.valueLed.value = !homeM.valueLed.value;
+    updateLedValueInFirebase();
   }
 
   void updateLedValueInFirebase() {
