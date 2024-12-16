@@ -1,11 +1,18 @@
 import 'package:get/get.dart';
 
+// homeModel.dart
 class homeModel {
-  // tambahan
-  var valueLed = false.obs;
+  RxString suhu = '0'.obs;
+  RxString kelembapan = '0'.obs;
+  RxString ledStatus = '0'.obs;
 
-  // utama
-  var kelembapan = ''.obs;
-  var led = ''.obs;
-  var suhu = ''.obs;
+  homeModel({
+    String? suhu,
+    String? kelembapan,
+    String? ledStatus,
+  }) {
+    this.suhu = (suhu ?? '0').obs;
+    this.kelembapan = (kelembapan ?? '0').obs;
+    this.ledStatus = (ledStatus ?? '0').obs;
+  }
 }

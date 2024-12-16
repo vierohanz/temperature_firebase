@@ -22,7 +22,7 @@ class MainApp extends StatelessWidget {
       getPages: [
         GetPage(
           name: '/',
-          page: () => home(),
+          page: () => Home(),
         ),
       ],
     );
